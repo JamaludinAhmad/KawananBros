@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    
     Rigidbody2D rb ;
     // kecepatan dan daya lompat
     public float PlayerSpeed, PlayerJumpforce ,rightleft;
@@ -15,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     {
         
     }
+
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
     }
