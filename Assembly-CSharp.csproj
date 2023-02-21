@@ -37,17 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\CameraController.cs" />
-     <Compile Include="Assets\Simple 2D Platformer BE2\ReadMe\Scripts\ReadmeBE2.cs" />
+     <Compile Include="Assets\Script\UIManager.cs" />
+     <Compile Include="Assets\Export Data\Simple 2D Platformer BE2\ReadMe\Scripts\ReadmeBE2.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\Enemy\Enemy.cs" />
      <Compile Include="Assets\Script\PlayerScript\PlayerMovement.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Script\CameraController.cs" />
-     <Compile Include="Assets\Enemy.cs" />
-     <Compile Include="Assets\Script\GameManager.cs" />
-=======
-     <Compile Include="Assets\UIManager.cs" />
->>>>>>> 8285ea71959f1a6e85552ceb649ae81a265ee594
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

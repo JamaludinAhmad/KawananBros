@@ -74,14 +74,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Jump(){
-        if ( Input.GetKeyDown(KeyCode.Space) && IsGrounded()  || Input.GetKeyDown(KeyCode.W) && IsGrounded() ){
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()  || Input.GetKeyDown(KeyCode.W) && IsGrounded() ){
             anim.SetTrigger(jumpAnimation);
             rb.velocity = Vector2.up * PlayerJumpforce;
         }
      
         }
 
-         bool IsGrounded(){
+        bool IsGrounded(){
             return Physics2D.OverlapCircle(ground.position, radius, whatisground);
             
         }
