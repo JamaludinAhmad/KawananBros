@@ -579,3 +579,4 @@ Received Import Request.
 Start importing Assets/Enemy.cs using Guid(09ccf2f4c11b0894f8c544d1f5319e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8697984687c66ee1318e508b5771cf51') in 0.027601 seconds
   Import took 0.033500 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
