@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static int nyawa = 3;
 
-    public static void Dead(){
+    public static void PlayerDead(){
         nyawa--;
         if(nyawa == 0){
             return;
