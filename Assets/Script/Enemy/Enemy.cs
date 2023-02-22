@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public bool isDead = false;
     [SerializeField] public float speed;
     [SerializeField] public Rigidbody2D enemyRb;
-    private void Update() {
-        enemyRb.velocity = speed * Vector2.left;        
+    
+    public virtual void Move(){
+        //Do Nothing
     }
-    void OnCollisionEnter2D(Collision2D other) {
+
+    public virtual void OnCollisionEnter2D(Collision2D other) {
 
         //ketika bertubruk dengan player
         if(other.gameObject.tag == "Player"){
@@ -27,6 +30,7 @@ public class Enemy : MonoBehaviour
                 Rigidbody2D playerrb = player.GetComponent<Rigidbody2D>();
                 playerrb.velocity = Vector2.up * 5;
                 Destroy(this.gameObject);
+                isDead = true;
             }
             else{
                 Destroy(player.gameObject);
